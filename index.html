@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple HTML Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Simple Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2 id = namebakr> About This Page</h2>
+            <button type="button" id = "btn"
+             onclick='document.getElementById("namebakr").innerHTML
+              = "Hello JavaScript!"'>Click Me!</button>
+              <h2 id = "zo" style="display: none"> About This Page</h2>
+              <button type="button" id = "btn" 
+              onclick='document.getElementById("zo").style.display="block"'>Click Me!</button>
+              <p id = "zr"> </p>
+
+            <p onmouseover="style.color='red'" onmouseout="style.color='black'">This is a simple HTML page with some basic CSS styling. 
+                Feel free to explore and modify the code as you like.</p>
+                
+
+                <script src="testo.js"></script>
+                <p id="demo">safd</p>
+                <script>
+                    let hello = "";
+                    
+                    hello = () => {
+                      document.getElementById("demo").innerHTML += this;
+                    }
+                    //A button object calls the function:
+                    document.getElementById("btn").addEventListener("click", hello);
+                    </script>
+
+                <script>
+                    var x , y;
+                    x = 10;
+                    y = 3 * x ;
+                    document.getElementById("zr").innerHTML = y;
+                </script>
+
+                <div class="greenbox">
+                    <div class="titlegreen"> مفترقات
+                        <div class="angle"></div>
+                    </div>
+                    <ul class="ulc">
+                        <li class ="ilc"> لائحة الشرف</li>
+                        <li class ="ilc"> مواعيد دوام و استراحة الدوائر</li>
+                        <li class ="ilc"> اعدادات الشبكة الاسلكية</li>
+                        <li class ="ilc"> اسعار البيع في كافتريات الجامعة</li>
+                        <li class ="ilc"> هواتف ضرورية</li>
+                        <li class ="ilc"> نشرات ارشادية - قسم السلامة العامة</li>
+                    </ul>
+                </div>
+                
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simple Page</p>
+    </footer>
+</body>
+</html>
