@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="ar">
+
 <head>
     <title>Simple HTML Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="header">
-            <a href="https://ritaj.birzeit.edu/register/" target="_top" class="pull-left">
+            <a href="" target="_top" class="pull-left">
                 <img id="ritaj-logo" src="photo/Ritaj.gif" alt="Ritaj Logo" width="100" height="60">
             </a>
             <div id="word2">
@@ -15,126 +17,145 @@
                 <div>Birzeit University Academic and Administrative Portal</div>
             </div>
             <div>
-                <a href="http://www.birzeit.edu/" target="_blank" >
+                <a href="" target="_blank">
                     <img src="photo/bzu_logo.png" alt="BZU Logo" id="bzu_logo" width="150" height="45">
                 </a>
             </div>
         </div>
     </header>
     <hr>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+
     <main>
         <section>
-            <h2 id = namebakr> About This Page</h2>
-            <button type="button" id = "btn"
-             onclick='document.getElementById("namebakr").innerHTML
-              = "Hello JavaScript!"'>Click Me!</button>
-              <h2 id = "zo" style="display: none"> About This Page</h2>
-              <button type="button" id = "btn" 
-              onclick='document.getElementById("zo").style.display="block"'>Click Me!</button>
-              <p id = "zr"> </p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="login-container">
+                        <div id="register-login">
+                            <form name="login" method="post" action="" style="margin: 0px;" autocomplete="off"><input
+                                    type="hidden" name="form:mode" value="edit">
+                                <input type="hidden" name="form:id" value="login">
+                                <table cellspacing="2" cellpadding="2" border="0">
+                                    <input type="hidden" name="__confirmed_p" value="0"><input type="hidden"
+                                        name="__refreshing_p" value="0"><input type="hidden" name="return_url"
+                                        value="/"><input type="hidden" name="time" value="1721948119"><input
+                                        type="hidden" name="token_id" value="798"><input type="hidden" name="hash"
+                                        value="A81D043924EDA5615ECE462B3B460CDC3C38D18D">
+                                    <tbody>
+                                        <tr class="form-element">
+                                            <td class="form-label">
+                                                اسم المستخدم
+                                            </td>
+                                            <td class="form-widget">
+                                                <input type="text" name="" value="" autocomplete="off"
+                                                    placeholder="Username">
+                                            </td>
+                                        </tr>
+                                        <tr class="form-element">
+                                            <td class="form-label">
+                                                كلمة المرور
+                                            </td>
+                                            <td class="form-widget">
+                                                <input type="password" name="" autocomplete="off"
+                                                    placeholder="Password">
+                                            </td>
+                                        </tr>
+                                        <tr class="form-element">
+                                            <td align="center" colspan="2">
+                                                <input type="submit" name="" value="	تسجيل دخول	">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
 
-            <p onmouseover="style.color='red'" onmouseout="style.color='black'">This is a simple HTML page with some basic CSS styling. 
-                Feel free to explore and modify the code as you like.</p>
-                
-
-                <script src="testo.js"></script>
-                <p id="demo">safd</p>
-                <script>
-                    let hello = "";
-                    
-                    hello = () => {
-                      document.getElementById("demo").innerHTML += this;
-                    }
-                    //A button object calls the function:
-                    document.getElementById("btn").addEventListener("click", hello);
-                    </script>
-
-                <script>
-                    var x , y;
-                    x = 10;
-                    y = 3 * x ;
-                    document.getElementById("zr").innerHTML = y;
-                </script>
-
-                <div class="tables">
-                    <div class="greenbox">
-                        <div  class="titlegreen"> مفترقات 
-                                <img src="photo/arrow-rtl.png">
-                            <div class="angle"></div>
+                            </form>
                         </div>
-                        <ul class="ulc">
-                            <li class ="ilc"> لائحة الشرف</li>
-                            <li class ="ilc"> مواعيد دوام و استراحة الدوائر</li>
-                            <li class ="ilc"> اعدادات الشبكة الاسلكية</li>
-                            <li class ="ilc"> اسعار البيع في كافتريات الجامعة</li>
-                            <li class ="ilc"> هواتف ضرورية</li>
-                            <li class ="ilc"> نشرات ارشادية - قسم السلامة العامة</li>
-                        </ul>
-                       
-                    </div>
-                    <div class="greenbox">
-                        <div class="titlegreen">  معلومات
-                            <img src="photo/arrow-rtl.png">
-                            <div class="angle"></div>
-                        </div>
-                        <ul class="ulc">
-                            <li class ="bld"> <img src="photo/star.gif">التقويم الأكاديمي للعام الدراسي 2023/2024<img src="photo/star.gif"> <style></style></li>
-                            <li class ="bld"> <img src="photo/star.gif">التقويم الأكاديمي للعام الدراسي 2024/2025<img src="photo/star.gif"></li>
-                            <li class ="ilc"> دليل درجة البكالوريوس</li>
-                            <li class ="ilc"> دليل الدراسات العليا</li>
-                            <li class ="ilc"> الأنشطة والتعليمات</li>
-                            <li class ="ilc"> أردة الإعلانات الرسمية</li>
-                            <li class ="ilc"> دائرة التسجيل والقبول</li>
-                            <li class ="bld"> تعليمات دفع الرسوم الجامعية</li>
-                            <li class ="bld"> عنوان بريد إلكتروني ضرورية</li>
-                            <li class ="bld"> تعليمات التأمين الصحي لطلبة الجامعة</li>
-                        </ul>
-                    </div>
-                    <div class="greenbox">
-                        <div class="titlegreen">  روابط
-                            <img src="photo/arrow-rtl.png">
-                            <div class="angle"></div>
-                        </div>
-                        <ul class="ulc">
-                            <li class ="ilc"> صندوق الإقتراحات والشكاوي</li>
-                            <li class ="bld">  <img src="photo/star.gif">مرصد العدالة الإجتماعية في جامعة بيرزيت<img src="photo/star.gif"></li>
-                            <li class ="ilc"> وحدة قروض الطلبة - وزارة التربية والتعليم العالي</li>
-                            <li class ="ilc"> عطاءات</li>
-                            <li class ="ilc"> طلب توظيف</li>
-                            <li class ="ilc"> معرض فرص المساعدات</li>
-                            <li class ="bld"> itcصفحة الـ  </li>
-                        </ul>
+                        <a href="">نسيت كلمة المرور؟ - <span dir="ltr">Forgot
+                                your password?</span></a>
                     </div>
                 </div>
-                
+                <div class="col-sm-8 hidden-xs main-photo-container">
+                    <img src="photo/Screenshot 2024-07-31 233933.jpg">
+                </div>
+
+            </div>
+
+            <div class="tables">
+                <div class="greenbox">
+                    <div class="titlegreen"> مفترقات
+                        <img src="photo/arrow-rtl.png">
+                        <div class="angle"></div>
+                    </div>
+                    <ul class="ulc">
+                        <li class="ilc"> لائحة الشرف</li>
+                        <li class="ilc"> مواعيد دوام و استراحة الدوائر</li>
+                        <li class="ilc"> اعدادات الشبكة الاسلكية</li>
+                        <li class="ilc"> اسعار البيع في كافتريات الجامعة</li>
+                        <li class="ilc"> هواتف ضرورية</li>
+                        <li class="ilc"> نشرات ارشادية - قسم السلامة العامة</li>
+                    </ul>
+
+                </div>
+                <div class="greenbox">
+                    <div class="titlegreen"> معلومات
+                        <img src="photo/arrow-rtl.png">
+                        <div class="angle"></div>
+                    </div>
+                    <ul class="ulc">
+                        <li class="bld"> <img src="photo/star.gif">التقويم الأكاديمي للعام الدراسي 2023/2024<img
+                                src="photo/star.gif">
+                            <style></style>
+                        </li>
+                        <li class="bld"> <img src="photo/star.gif">التقويم الأكاديمي للعام الدراسي 2024/2025<img
+                                src="photo/star.gif"></li>
+                        <li class="ilc"> دليل درجة البكالوريوس</li>
+                        <li class="ilc"> دليل الدراسات العليا</li>
+                        <li class="ilc"> الأنشطة والتعليمات</li>
+                        <li class="ilc"> أردة الإعلانات الرسمية</li>
+                        <li class="ilc"> دائرة التسجيل والقبول</li>
+                        <li class="bld"> تعليمات دفع الرسوم الجامعية</li>
+                        <li class="bld"> عنوان بريد إلكتروني ضرورية</li>
+                        <li class="bld"> تعليمات التأمين الصحي لطلبة الجامعة</li>
+                    </ul>
+                </div>
+                <div class="greenbox">
+                    <div class="titlegreen"> روابط
+                        <img src="photo/arrow-rtl.png">
+                        <div class="angle"></div>
+                    </div>
+                    <ul class="ulc">
+                        <li class="ilc"> صندوق الإقتراحات والشكاوي</li>
+                        <li class="bld"> <img src="photo/star.gif">مرصد العدالة الإجتماعية في جامعة بيرزيت<img
+                                src="photo/star.gif"></li>
+                        <li class="ilc"> وحدة قروض الطلبة - وزارة التربية والتعليم العالي</li>
+                        <li class="ilc"> عطاءات</li>
+                        <li class="ilc"> طلب توظيف</li>
+                        <li class="ilc"> معرض فرص المساعدات</li>
+                        <li class="bld"> itcصفحة الـ </li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
     </main>
     <br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br><br>
-        <br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br>
     <hr>
-        <footer>
-            <div>
-                <a href="http://www.birzeit.edu/" target="_blank" >
-                    <img src="photo/bzu_logo.png" alt="BZU Logo" id="bzu_logo" width="150" height="45">
-                </a>
-                <div id="to_right"> 
-                    <i> 2024 - 2002 &#169;</i>
-                    <a href="https://www.birzeit.edu/ar">  جامعة بيرزيت &nbsp; </a>
-                    جميع الحقوق محفوظة
+    <footer>
+        <div>
+            <a href="http://www.birzeit.edu/" target="_blank">
+                <img src="photo/bzu_logo.png" alt="BZU Logo" id="bzu_logo" width="150" height="45">
+            </a>
+            <div id="to_right">
+                <i> 2024 - 2002 &#169;</i>
+                <a href="https://www.birzeit.edu/ar"> جامعة بيرزيت &nbsp; </a>
+                جميع الحقوق محفوظة
             </div>
             <br>
             <div id="to_right">
@@ -142,19 +163,20 @@
                 <img src="photo/tel.png" width="30">
                 2982000-2-970 &nbsp;
                 <img src="photo/medical.jpg" width="30">
-                <em >
-                    العيادة: الأرضي 022982151   الخلوي 0592982001  &nbsp;
+                <em>
+                    العيادة: الأرضي 022982151 الخلوي 0592982001 &nbsp;
                 </em>
                 <img src="photo/guard.jpg" width="30">
                 <em>
-                    الحرس: الأرضي 022982919   الخلوي 0599281200 &nbsp;
+                    الحرس: الأرضي 022982919 الخلوي 0599281200 &nbsp;
                 </em>
                 <img src="photo/mail.png">
             </div>
-        </footer>
-        <hr>
-        <br>
-        <br>
-    
+    </footer>
+    <hr>
+    <br>
+    <br>
+
 </body>
+
 </html>
